@@ -74,6 +74,10 @@ section p {
     color: #555;
 }
 
+section div h2 {
+    text-align: center;
+}
+
 /* Footer Style */
 footer {
     background-color: #333;
