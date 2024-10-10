@@ -1,0 +1,90 @@
+<html lang="id"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Gaya Dasar untuk Navigasi */
+        nav {
+            color: white;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            position: relative;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        
+        }
+        
+        /* Gaya untuk Dropdown */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Selamat Datang di Website Saya</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Lainnya</a>
+                    <div class="dropdown-content">
+                        <a href="Desain.html">Desain</a>
+                        <a href="layanan.html">Layanan</a>
+                        <a href="testi.html">Testimoni</a>
+                    </div>
+                </li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Tentang Saya</h2>
+            <p>Halo! Nama saya Saputra Ardian, dan saya adalah seorang pengembang web dengan pengalaman lebih dari 3 tahun dalam membangun situs web yang responsif, elegan, dan mudah digunakan. Saya memiliki minat yang besar terhadap teknologi dan pengembangan perangkat lunak, dan saya terus memperbarui keterampilan saya untuk mengikuti perkembangan industri yang dinamis ini.</p>
+            <p>Saya memulai karier saya sebagai developer front-end, tetapi seiring waktu saya mengembangkan keterampilan di back-end juga. Ini memungkinkan saya untuk membangun aplikasi web yang lengkap, mulai dari desain antarmuka hingga pengelolaan server dan database.</p>
+            <p>Dalam bekerja, saya sangat memperhatikan detail dan selalu mencari solusi inovatif untuk setiap tantangan yang saya hadapi. Saya senang bekerja dalam tim, berbagi pengetahuan, dan selalu terbuka untuk proyek-proyek kolaboratif yang menarik.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Website Sederhana. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

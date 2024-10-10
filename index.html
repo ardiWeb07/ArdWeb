@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Gaya Dasar untuk Navigasi */
+        nav {
+            color: white;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            position: relative;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        
+        }
+        
+        /* Gaya untuk Dropdown */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Website Saya</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="navigasi.html">Tentang</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Lainnya</a>
+                    <div class="dropdown-content">
+                        <a href="Desain.html">Desain</a>
+                        <a href="layanan.html">Layanan</a>
+                        <a href="testi.html">Testimoni</a>
+                    </div>
+                </li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Beranda</h2>
+            <p>Selamat datang di website pribadi saya! Di sini, saya berbagi tentang pengalaman, karya, dan pandangan saya dalam dunia pengembangan web. Saya berharap situs ini bisa memberikan informasi yang berguna bagi Anda, baik Anda seorang pemula maupun profesional yang ingin mengembangkan keterampilan di bidang teknologi.</p>
+            <p>Jelajahi halaman ini untuk mengetahui lebih banyak tentang saya, proyek-proyek yang telah saya kerjakan, serta cara menghubungi saya. Terima kasih telah berkunjung!</p>
+        </section>
+
+        <section id="about">
+            <h2>Tentang Saya</h2>
+            <p>Halo! Nama saya Ardian Saputra, dan saya adalah seorang pengembang web dengan pengalaman lebih dari 3 tahun dalam membangun situs web yang responsif, elegan, dan mudah digunakan. Saya memiliki minat yang besar terhadap teknologi dan pengembangan perangkat lunak, dan saya terus memperbarui keterampilan saya untuk mengikuti perkembangan industri yang dinamis ini.</p>
+            <p>Saya memulai karier saya sebagai developer front-end, tetapi seiring waktu saya mengembangkan keterampilan di back-end juga. Ini memungkinkan saya untuk membangun aplikasi web yang lengkap, mulai dari desain antarmuka hingga pengelolaan server dan database.</p>
+            <p>Dalam bekerja, saya sangat memperhatikan detail dan selalu mencari solusi inovatif untuk setiap tantangan yang saya hadapi. Saya senang bekerja dalam tim, berbagi pengetahuan, dan selalu terbuka untuk proyek-proyek kolaboratif yang menarik.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Kontak</h2>
+            <p>Saya selalu terbuka untuk diskusi tentang proyek baru, peluang kolaborasi, atau sekadar pertanyaan tentang pengembangan web. Anda dapat menghubungi saya melalui email berikut, atau dengan mengisi form kontak di bawah ini:</p>
+
+            <!-- Form Kontak -->
+            <form action="mailto:saputraardian026@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Nama:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Pesan:</label><br>
+                <textarea id="message" name="message" required></textarea><br><br>
+                <input type="submit" value="Kirim">
+            </form>
+
+            <!-- Media Sosial -->
+            <div id="social-media">
+                <h3>Ikuti Saya di Media Sosial:</h3>
+                <a href="https://www.instagram.com/ardi_mazk07" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/username" target="_blank" class="social-icon facebook"><i class="fab fa-facebook"></i></a>
+                <a href="mailto:saputraardian026@gmail.com" class="social-icon email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Desain</h2>
+            <p>Ini adalah bagian tentang desain yang telah saya kerjakan.</p>
+        </section>
+
+        <section id="services">
+            <h2>Layanan</h2>
+            <p>Ini adalah bagian tentang layanan yang saya tawarkan.</p>
+        </section>
+
+        <section id="testimonials">
+            <h2>Testimoni</h2>
+            <p>Ini adalah bagian tentang testimoni dari klien saya.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Website Sederhana. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
