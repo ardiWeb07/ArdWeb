@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Profesional</title>
+    <link rel="stylesheet" href="desain.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* Gaya Dasar untuk Navigasi */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1100ff;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        /* Gaya untuk logo */
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .logo span {
+            color: #f39c12; /* Warna oranye untuk highlight */
+        }
+
+        /* Gaya Navigasi */
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #4936ee;
+            border-radius: 4px;
+        }
+
+        /* Gaya untuk Dropdown */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Gaya untuk Desain Item */
+        .design-item {
+            display: flex;
+            align-items: flex-start;
+            margin: 20px 0;
+            gap: 20px; /* Jarak antara gambar dan teks */
+        }
+
+        .design-item img {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .design-item h2 {
+            font-size: 24px;
+            margin: 0 0 10px 0;
+        }
+
+        .design-item p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Gaya Responsif untuk tampilan lebih kecil */
+        @media (max-width: 768px) {
+            .design-item {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .design-item img {
+                width: 100%;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Logo di sebelah kiri -->
+        <div class="logo">Ardi<span>WEB</span></div>
+
+        <!-- Navigasi di sebelah kanan -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="navigasi.html">Tentang</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Lainnya</a>
+                    <div class="dropdown-content">
+                        <a href="desain.html">Desain</a>
+                        <a href="layanan.html">Layanan</a>
+                        <a href="testi.html">Testimoni</a>
+                    </div>
+                </li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Desain">
+            <h2>Desain</h2>
+            <p>Desain grafis adalah bidang seni dan komunikasi visual yang berfokus pada pembuatan elemen-elemen grafis untuk menyampaikan pesan atau informasi secara efektif dan menarik. Desain grafis menggabungkan teks, gambar, warna, tipografi, dan ilustrasi untuk menciptakan komunikasi visual yang dapat diimplementasikan dalam berbagai media, baik cetak maupun digital.</p>
+
+            <!-- Desain Kaos Harimau -->
+            <div class="design-item">
+                <img src="Desain kaos harimau.jpeg" alt="Desain Kaos Harimau">
+                <div>
+                    <h2>Desain Kaos Harimau</h2>
+                    <p>Desain ini terinspirasi dari kekuatan dan keindahan harimau. Warna kontras digunakan untuk memberikan kesan yang kuat dan berani. Desain ini cocok untuk kaos casual maupun streetwear yang ingin menonjolkan karakteristik yang penuh keberanian.</p>
+                </div>
+            </div>
+
+            <!-- Desain Kaos TKJ 1 -->
+            <div class="design-item">
+                <img src="TKJ desain.jpeg" alt="Desain Kaos TKJ 1">
+                <div>
+                    <h2>Desain Kaos TKJ 1</h2>
+                    <p>Desain ini dirancang khusus untuk jurusan Teknik Komputer dan Jaringan (TKJ), dengan fokus pada teknologi modern dan konektivitas. Desain yang sederhana namun elegan ini ideal untuk siswa TKJ yang ingin menunjukkan identitas jurusannya.</p>
+                </div>
+            </div>
+
+            <!-- Desain Kaos TKJ 2 -->
+            <div class="design-item">
+                <img src="TKJ desain(1).jpeg" alt="Desain Kaos TKJ 2">
+                <div>
+                    <h2>Desain Kaos TKJ 2</h2>
+                    <p>Variasi lain dari desain TKJ yang lebih dinamis, dengan kombinasi warna-warna yang energik. Desain ini mencerminkan semangat siswa TKJ dalam mengejar keahlian di bidang teknologi informasi dan jaringan.</p>
+                </div>
+            </div>
+
+            <!-- Desain Motor -->
+            <div class="design-item">
+                <img src="motor.jpeg" alt="Desain Motor">
+                <div>
+                    <h2>Desain Motor</h2>
+                    <p>Desain motor ini dibuat dengan detail dan gaya futuristik. Garis-garis yang tajam dan warna yang modern memberikan kesan kecepatan dan performa tinggi, cocok untuk motor yang ingin tampil beda dan menonjol di jalan.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Website Profesional. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
